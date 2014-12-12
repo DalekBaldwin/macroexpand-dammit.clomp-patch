@@ -8,7 +8,7 @@
 (defparameter *patched-symbols*
   '(macroexpand-dammit::*form-handler*
     macroexpand-dammit::defhandler
-    macroexpand-dammit::hander-let
+    macroexpand-dammit::hander-let ;; typo in original
     macroexpand-dammit::m
     macroexpand-dammit::macroexpand-dammit
     macroexpand-dammit::macroexpand-dammit-as-macro
