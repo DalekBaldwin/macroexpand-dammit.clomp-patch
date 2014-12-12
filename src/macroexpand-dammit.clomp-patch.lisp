@@ -51,7 +51,7 @@
 (defmacro m (form &environment *env*)
   (let ((macroexpand-dammit::*form-handler*
          macroexpand-dammit.clomp-patch::*form-handler*))
-    (macroexpand-dammit::m form)))
+    (macroexpand-dammit::e form)))
 
 (defun macroexpand-dammit (form &optional *env*)
   (let ((macroexpand-dammit::*form-handler*
