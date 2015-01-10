@@ -14,7 +14,7 @@
                          (:file "package")
                          (:file "macroexpand-dammit.clomp-patch"))
             :serial t))
-  :depends-on (:macroexpand-dammit :dynfun))
+  :depends-on (:macroexpand-dammit))
 
 (defsystem :macroexpand-dammit.clomp-patch-test
   :name "macroexpand-dammit.clomp-patch-test"
