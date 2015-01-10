@@ -8,6 +8,5 @@
 (defparameter *system-directory*
   (make-pathname
    :directory 
-   (slot-value
-    (asdf:system-definition-pathname :macroexpand-dammit.clomp-patch)
-    'directory)))
+   (pathname-directory
+    (asdf:system-definition-pathname :macroexpand-dammit.clomp-patch))))
