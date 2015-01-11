@@ -1,13 +1,13 @@
-(in-package :cl)
+(in-package :cl-user)
 
 (defpackage :macroexpand-dammit.clomp-patch
   (:use :cl)
   #.`(:import-from :macroexpand-dammit
       ,@(loop for symbol being the present-symbols of :macroexpand-dammit
-             when (not
-                   (member
-                    symbol
-                    macroexpand-dammit.clomp-patch.patched-symbols::*patched-symbols*))
+           when (not
+                 (member
+                  symbol
+                  macroexpand-dammit.clomp-patch.patched-symbols::*patched-symbols*))
            collect (intern (symbol-name symbol) :keyword)))
   #.`(:export
       ,@(loop for symbol being the external-symbols of :macroexpand-dammit
