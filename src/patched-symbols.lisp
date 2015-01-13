@@ -1,4 +1,4 @@
-(in-package :cl)
+(in-package :cl-user)
 
 (defpackage :macroexpand-dammit.clomp-patch.patched-symbols
   (:use :cl))
