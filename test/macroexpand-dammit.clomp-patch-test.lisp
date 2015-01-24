@@ -1,4 +1,4 @@
-(in-package #:macroexpand-dammit.clomp-patch-test)
+(in-package :macroexpand-dammit.clomp-patch-test)
 
 (def-suite :macroexpand-dammit-test)
 (in-suite :macroexpand-dammit-test)

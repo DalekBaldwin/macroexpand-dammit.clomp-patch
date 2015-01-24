@@ -1,4 +1,4 @@
-(in-package #:macroexpand-dammit.clomp-patch)
+(in-package :macroexpand-dammit.clomp-patch)
 
 (defparameter *form-handler*
   (make-hash-table))
