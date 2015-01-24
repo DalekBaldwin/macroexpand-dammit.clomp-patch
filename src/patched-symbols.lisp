@@ -1,9 +1,9 @@
-(in-package :cl-user)
+(in-package #:cl-user)
 
-(defpackage :macroexpand-dammit.clomp-patch.patched-symbols
-  (:use :cl))
+(defpackage #:macroexpand-dammit.clomp-patch.patched-symbols
+  (:use #:cl))
 
-(in-package :macroexpand-dammit.clomp-patch.patched-symbols)
+(in-package #:macroexpand-dammit.clomp-patch.patched-symbols)
 
 (defparameter *patched-symbols*
   '(macroexpand-dammit::*form-handler*
